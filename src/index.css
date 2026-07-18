@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Dancing+Script:wght@700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer utilities {
+  .text-apc-green {
+    color: #1b6b2c;
+  }
+  .text-apc-green-dark {
+    color: #124a1e;
+  }
+  .text-apc-red {
+    color: #c8102e;
+  }
+  .text-apc-blue {
+    color: #002868;
+  }
+  .text-gold {
+    color: #c9a227;
+  }
+  .text-gold-light {
+    color: #e4c55e;
+  }
+  .text-gold-dark {
+    color: #9c7b1a;
+  }
+  .bg-apc-green {
+    background-color: #1b6b2c;
+  }
+  .bg-apc-green-dark {
+    background-color: #124a1e;
+  }
+}
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideInUp 1s ease-out forwards;
+}
