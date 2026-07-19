@@ -5,7 +5,7 @@ function About() {
     "Community Development Association (CDA) visits.",
     "Youth association engagements.",
     "Town hall conversations.",
-    "Door-to-door grassroots interactions.",
+    "To Highlight Yayi's Commitments to Ogun Youth.",
     "Digital media campaigns.",
     "Civic education targeted at first-time and young voters.",
   ];
