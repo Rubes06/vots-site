@@ -49,9 +49,8 @@ function Hero() {
       className="relative w-full min-h-screen md:min-h-[130vh] flex flex-col items-center justify-end text-center px-6 pb-12 overflow-hidden"
     >
       <div
-        className={`absolute inset-0 flex ${
-          enableTransition ? "transition-transform duration-1000 ease-in-out" : ""
-        }`}
+        className={`absolute inset-0 flex ${enableTransition ? "transition-transform duration-1000 ease-in-out" : ""
+          }`}
         style={{
           width: `${extendedImages.length * 100}%`,
           transform: `translateX(-${currentImage * (100 / extendedImages.length)}%)`,
@@ -70,7 +69,8 @@ function Hero() {
 
       <div className="relative z-20 flex flex-col items-center animate-slide-in">
         <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-6 font-inter leading-tight">
-      <span className="text-apc-green text-4xl sm:text-6xl md:text-8xl font-extrabold mr-[-8px] sm:mr-[-12px] md:mr-[-16px]">V</span>
+          <span className="text-apc-red text-4xl sm:text-6xl md:text-8xl font-extrabold">101 </span>
+          <span className="text-apc-green text-4xl sm:text-6xl md:text-8xl font-extrabold mr-[-8px] sm:mr-[-12px] md:mr-[-16px]">V</span>
           <span className="text-apc-red">olunteers </span>
           <span className="text-apc-green text-4xl sm:text-6xl md:text-8xl font-extrabold">O</span>
           <span className="text-apc-red">f </span>

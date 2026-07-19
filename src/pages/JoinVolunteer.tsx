@@ -80,7 +80,7 @@ function JoinVolunteer() {
         </p>
         <Link
           to="/"
-          className="bg-black text-white font-semibold px-6 py-3 rounded-md hover:bg-gold hover:text-black transition-colors"
+          className="bg-black text-white font-semibold px-6 py-3 rounded-md"
         >
           ← Back to Home
         </Link>
