@@ -76,7 +76,7 @@ function JoinVolunteer() {
         <p className="text-gray-500 text-sm max-w-md">
           If you don't hear from us within a few days, please also reach out to
           us on WhatsApp at{" "}
-          <span className="font-semibold text-black">07040711955</span>.
+          <span className="font-semibold text-black">08038757679</span>.
         </p>
         <Link
           to="/"

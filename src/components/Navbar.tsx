@@ -104,11 +104,11 @@ function Navbar() {
           </Link>
         </div>
       )}
-      <Link
+     <Link
         to="/join-volunteer"
         className="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 z-50 bg-apc-green text-white font-semibold px-8 py-3 rounded-full shadow-lg"
       >
-        Join Volunteers
+        Join VOTS
       </Link>
     </nav>
   );
