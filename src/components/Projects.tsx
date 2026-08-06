@@ -1,27 +1,29 @@
 import { useState, useEffect, useCallback } from "react";
 import { FiX, FiChevronLeft, FiChevronRight, FiShare2, FiCheck } from "react-icons/fi";
-import healthCentreExterior from "../assets/project image/WhatsApp Image 2026-07-28 at 3.54.09 PM (3).jpeg";
-import healthCentreEntrance from "../assets/project image/WhatsApp Image 2026-07-28 at 3.54.09 PM (2).jpeg";
 import school1 from "../assets/project image/school.jpeg";
 import school2 from "../assets/project image/school2.jpeg";
 import school3 from "../assets/project image/school3.jpeg";
-import water1 from "../assets/project image/Water.jpeg";
-import water2 from "../assets/project image/water2.jpeg";
+import mw1 from "../assets/project image/Mw1).jpeg";
+import mw2 from "../assets/project image/MW2.jpeg";
+import mw3 from "../assets/project image/MW3.jpeg";
+import farm1 from "../assets/project image/Frm 1.jpeg";
+import farm2 from "../assets/project image/frm2.jpeg";
+import farm3 from "../assets/project image/frm3.jpeg";
 
 type Project = {
   title: string;
   location: string;
   category: string;
-  // date: string;
   description: string;
   images?: string[];
   comingSoon?: boolean;
 };
 
 const categoryColors: Record<string, string> = {
-  Health: "bg-blue-100 text-blue-700",
+  Agriculture: "bg-green-100 text-green-700",
   Education: "bg-purple-100 text-purple-700",
   Infrastructure: "bg-orange-100 text-orange-700",
+  Empowerment: "bg-pink-100 text-pink-700",
 };
 
 function Projects() {
@@ -31,31 +33,28 @@ function Projects() {
 
   const projects: Project[] = [
     {
-      title: "Primary Health Care Centre",
-      location: "State Hospital, Ilaro — Yewa South LGA",
-      category: "Health",
-      // date: "July 2026",
+      title: "Farmers Empowerment for Food Security & Poverty Alleviation",
+      location: "Ogun State",
+      category: "Agriculture",
       description:
-        "A newly constructed and commissioned Primary Health Care Centre delivering affordable, accessible healthcare closer to home. Part of the Renewed Hope Agenda, this facility ensures residents of Yewa South can access quality health services within their own locality — because health is wealth.",
-      images: [healthCentreExterior, healthCentreEntrance],
+        "Another milestone has been achieved in advancing the Renewed Hope Agenda on Agriculture and Food Security. A total of 2,557 farmers across Ogun State were empowered with agricultural equipment, farm inputs, financial support, and a ₦100,000 grant each to boost their farming activities. This is the second edition of the programme, aimed at reducing poverty, improving food security, creating wealth, and encouraging youth participation in agriculture. Empowerment items included 10 tractors with full attachments, 250 haulage tricycles, 1,500 knapsack sprayers, 8,000 NPK & Urea fertilizers, 1,000 solar & gasoline water pumps, 1,000 seed planters, 17 power tillers, 25 different types of seeds & seedlings, 100 organic liquid fertilizers, 1,500 agric enzymes (3X), 2,000 pesticides, and hoes, cutlasses, shovels, wheelbarrows, and other farm tools. The event was attended by Alhaja Kudirat Abiodun Adegunwa-Balogun (APC Deputy Governorship Candidate), Alhaja Salmot Badru (Former Deputy Governor of Ogun State), Chief (Mrs) Temitope Adeola, Rt. Hon. Titi Oseni-Shodunke, Alhaji Mohammed Ekweme (APC Senatorial Chairman, Ogun West), Hon. Sikirulai Ogundele (Former Ogun PDP Chairman), Hon. Jimoh Ojugbele (APC Senatorial Candidate, Ogun West), Seriki Bashorun (APC House of Representatives Candidate, Ado-Odo/Ota Federal Constituency), Hon. Muftau Ajibola, Chief Olu Agemo, Hon. Bisiriyu Popoola, and many other prominent personalities from across Ogun State.",
+      images: [farm1, farm2, farm3],
     },
     {
       title: "Scholarships & Bursaries for 5,312 Students",
       location: "Ogun State",
       category: "Education",
-      // date: "July 2026",
       description:
         "Today, I fulfilled yet another promise in the area of educational and human resource development of our youth as I facilitated scholarships and bursaries for 5,312 students of university, polytechnics and colleges of education. Undergraduates of universities received N200,000 each while Polytechnic and Colleges of Education students got N150,000 as scholarships. The bursary amount is N100,000 each. A young artist of less than 10 years old got a scholarship from me for his masterpiece oil on canvas drawing of my portrait. The joyous event had in attendance the Deputy Governor of Ogun State, Engr. Noimot Salako-Oyedele; APC Deputy Governorship Candidate, Alhaja Kudirat Abiodun Adegunwa-Balogun; and my dear wife, Mrs. Temitope Adeola. Former Deputy Governor, Alhaja Salmot Badru; Ogun State APC Chairman, Chief Yemi Sanusi; Ambassador Sarafa Tunji Ishola, Nigeria's former Ambassador to the United Kingdom; Hon. Kayode Oladele, Ogun State Commissioner in the Federal Character Commission; Hon. Laolu Olabimtan, Ogun State Commissioner for Budget and Planning; Hon. Kolawole Moboluwaduro; Chief Derin Adebiyi, former APC State Chairman; Hon. Sikirulai Ogundele, former Ogun State PDP Chairman; Chief Bode Mustapha, the Osi of Egbaland; Hon. Jimoh Ojugbedele, APC Ogun West Senatorial Candidate; and other top government functionaries.",
       images: [school1, school2, school3],
     },
     {
-      title: "Promise Made, Promise Kept — Electricity Restoration",
-      location: "Ogun Waterside LGA",
-      category: "Infrastructure",
-      // date: "July 2026",
+      title: "5th Edition of Market Women & Men Empowerment",
+      location: "Ogun State",
+      category: "Empowerment",
       description:
-        "Two weeks ago I made a promise to stakeholders from Ogun Waterside LGA and environs for restoration of electricity. Today that promise is being fulfilled with the flag-off of the project that will restore light to over 50 communities that had been thrown into darkness for over 10 years. The flag-off took place during a well-attended town hall meeting in Abigi. I was accompanied to the event that witnessed massive crowds of appreciative indigenes by the APC Deputy Governorship Candidate, Mrs. Kudirat Abiodun Adegunwa-Balogun. Dignitaries in attendance included Prince Segun Adesegun, former Deputy Governor of Ogun State; Senator Lekan Mustapha; Hon. Abiodun Abudu-Balogun; Professor Awonusi; Hon. Babatunde Adejare; Alhaji Olatunde Rufai; the member representing Ogun Waterside State Constituency in the Ogun State House of Assembly, Hon. Samsudeen Lawal; the Special Adviser to the Governor on Water Resources, Hon. Damilola Otubanjo; former Executive Chairman of Ogun Waterside Local Government, Hon. Lateef Adekunle Mudashiru; the Executive Chairman of Ogun Waterside Local Government, Hon. Odunnake Ganiu; Senior Special Assistants to the Governor; representatives of the Christian Association of Nigeria (CAN); APC leaders from Oni, Etike, Abigi, Ilusin/Lukogbe and Ibiade Wards; party leaders from Ogun Waterside and Ijebu East; traditional rulers; religious leaders; and other stakeholders. #Ogun2027 #unprecedentedrepresentation",
-      images: [water1, water2],
+        "In fulfillment of my promise to the people, 3,000 market women and men were empowered with a ₦75,000 grant each to support their businesses. Prior to my election, I empowered 5,000 market women with ₦25,000 grants on two occasions, while subsequent editions increased the support to ₦50,000 and now ₦75,000. The initiative supports micro and small businesses and aligns with the Renew Hope Agenda of President Bola Ahmed Tinubu and Governor Dapo Abiodun's \"Oko Owo Dapo\" initiative for market women. The programme was attended by the Deputy Governor of Ogun State, Noimot Salako-Oyedele; Alhaja Salmot Badru, former Deputy Governor; Pastor Tokunbo Talabi, Secretary to the State Government; Rt. Hon. Oludaisi Elemide, Speaker of the Ogun State House of Assembly; Rt. Hon. Titi Oseni-Shodunke; Rt. Hon. Tunji Egbetokun; Alhaja Yemisi Abass, Iyaloja General of Ogun State; Mrs. Yemisi Salako; Hon. Olaolu Olabimtan, Commissioner for Budget and Planning; Hon. Taiwo Oludotun; and other serving and former government officials.",
+      images: [mw1, mw2, mw3],
     },
   ];
 
@@ -71,7 +70,6 @@ function Projects() {
   }, []);
 
   const nextImage = useCallback(() => {
-    setActiveProject((current) => current);
     setActiveImage((prev) => {
       if (activeProject === null) return prev;
       const images = projects[activeProject].images || [];
@@ -135,8 +133,9 @@ function Projects() {
             <div
               key={index}
               onClick={() => openGallery(index)}
-              className={`bg-white rounded-lg shadow-md overflow-hidden flex flex-col transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg ${project.comingSoon ? "" : "cursor-pointer"
-                }`}
+              className={`bg-white rounded-lg shadow-md overflow-hidden flex flex-col transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg ${
+                project.comingSoon ? "" : "cursor-pointer"
+              }`}
             >
               {project.comingSoon ? (
                 <div className="w-full h-52 bg-gray-100 border-b-4 border-green-700 flex items-center justify-center text-gray-400 text-sm">
@@ -167,9 +166,6 @@ function Projects() {
                   <div className="flex items-center justify-between mb-3">
                     <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${categoryColors[project.category] || "bg-gray-100 text-gray-600"}`}>
                       {project.category}
-                    </span>
-                    <span className="text-gray-400 text-xs font-medium">
-                      {/* {project.date} */}
                     </span>
                   </div>
                 )}
@@ -241,9 +237,6 @@ function Projects() {
             <div className="flex items-center justify-center gap-3 mb-2">
               <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${categoryColors[currentProject.category] || "bg-gray-100 text-gray-600"}`}>
                 {currentProject.category}
-              </span>
-              <span className="text-gray-400 text-xs font-medium">
-                {/* {currentProject.date} */}
               </span>
             </div>
             <h3 className="text-white text-lg font-bold">{currentProject.title}</h3>
