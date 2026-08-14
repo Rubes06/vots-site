@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
-import yayiIcon from "../assets/yayi2.png";
+import logo from "../assets/logo.jpeg";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,21 +37,7 @@ function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white text-black h-16 px-6 flex items-center justify-between font-inter shadow-sm border-b-4 border-apc-green">
       <Link to="/" className="flex items-center gap-2" onClick={closeMenu}>
-        <span className="flex items-center gap-3 font-bold text-4xl tracking-wide">
-          <span className="text-apc-red">101</span>
-          <span className="text-apc-green flex items-center">
-            V<span className="mx-0.5">.</span>
-            <span
-              className="inline-block rounded-full bg-cover bg-center flex-shrink-0"
-              style={{
-                width: "1.3em",
-                height: "1.3em",
-                backgroundImage: `url(${yayiIcon})`,
-              }}
-            ></span>
-            <span className="mx-0.5">.</span>T<span className="mx-0.5">.</span>S
-          </span>
-        </span>
+        <img src={logo} alt="VOTS Logo" className="h-12 w-auto object-contain" />
       </Link>
 
       <div className="hidden md:flex items-center gap-8 text-sm font-medium">
@@ -104,7 +90,8 @@ function Navbar() {
           </Link>
         </div>
       )}
-     <Link
+
+      <Link
         to="/join-volunteer"
         className="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 z-50 bg-apc-green text-white font-semibold px-8 py-3 rounded-full shadow-lg"
       >
