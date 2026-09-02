@@ -55,7 +55,7 @@ function About() {
           </p>
           <p className="text-gray-600 leading-relaxed">
             The movement is designed to mobilize credible citizens,
-            particularly young people, to encourage civic engagement and
+            particularly young people, to encourage civil engagement and
             community participation across Abeokuta South Local Government
             and, ultimately, the entire state.
           </p>
@@ -69,7 +69,7 @@ function About() {
           </h3>
           <p className="text-gray-600 leading-relaxed">
             To build a vibrant network of committed volunteers who will
-            promote constructive civic engagement and encourage informed
+            promote constructive civil engagement and encourage informed
             participation in the democratic process through community
             outreach and digital engagement.
           </p>
@@ -134,8 +134,8 @@ function About() {
           </h3>
           <p className="text-gray-600 leading-relaxed mb-2">
             Membership registration will be conducted through:{" "}
-            <a href="https://www.vots.ng" className="text-apc-green font-semibold text-lg hover:underline">
-              www.vots.ng
+            <a href="https://www.vots.com.ng" className="text-apc-green font-semibold text-lg hover:underline">
+              www.vots.com.ng
             </a>
           </p>
           <p className="text-gray-600 leading-relaxed mb-6">

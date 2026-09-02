@@ -23,7 +23,7 @@ function Support() {
 
         <p className="text-gray-300 max-w-2xl mx-auto mb-10 text-lg leading-relaxed">
           <span className="text-gold font-extrabold text-xl">
-            Yayi's Bonds
+            Yayi's Bond
           </span>{" "}
           — a promise to build a more{" "}
           <span className="text-white font-bold">prosperous</span>,{" "}

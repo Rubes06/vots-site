@@ -1,6 +1,5 @@
 import yayiMain from "../assets/Yayi main.jpeg";
 import yayi2 from "../assets/yayi2.png";
-import yayi3 from "../assets/Yayi carousel/yayi3.png";
 import yayi4 from "../assets/Yayi carousel/yayi4.png";
 import yayi6 from "../assets/Yayi carousel/yayi6.jpeg";
 import tinubu from "../assets/tinubu.jpeg";
@@ -14,11 +13,10 @@ const entries = [
   { image: tinubu, action: "Re-elect", name: "Asiwaju Bola Ahmed Tinubu", position: "President, Federal Republic of Nigeria" },
   { image: yayi2, action: "Vote", name: "Senator Olamilekan Solomon Adeola ", position: "Ogun State Governor" },
   { image: salisu, action: "Re-elect", name: "Salisu Afolabi Shuaib", position: "Senator representing Ogun Central Senatorial District" },
-  { image: yayi3, action: "Vote", name: "Senator Olamilekan Solomon Adeola ", position: "Ogun State Governor" },
-  { image: atobatele, action: "Re-elect", name: "Lukmon Atobatele", position: "OGHA, Abeokuta South Constituency 1" },
-  { image: yayi4, action: "Vote", name: "Senator Olamilekan Solomon Adeola ", position: "Ogun State Governor" },
+ { image: yayi6, action: "Vote", name: "Senator Olamilekan Solomon Adeola ", position: "Ogun State Governor" },
   { image: afuape, action: "Re-elect", name: "Afolabi Afuape", position: "Abeokuta South Federal Constituency" },
-  { image: yayi6, action: "Vote", name: "Senator Olamilekan Solomon Adeola ", position: "Ogun State Governor" },
+  { image: yayi4, action: "Vote", name: "Senator Olamilekan Solomon Adeola ", position: "Ogun State Governor" },
+  { image: atobatele, action: "Re-elect", name: "Lukmon Atobatele", position: "OGHA, Abeokuta South Constituency 1" },
   { image: adeyemi, action: "Vote", name: "Adeyemi Micheal Ademuyiwa", position: "OGHA, Abeokuta South Constituency 2" },
 ];
 
